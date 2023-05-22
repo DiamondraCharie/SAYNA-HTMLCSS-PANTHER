@@ -196,11 +196,7 @@
     padding-bottom: 10px;
     }
 
-    .main-accueil .section2 .section2-text p {
-    margin: 0;
-      }
-
-    .main-accueil .section2 .section-text .text {
+    .main-accueil .background .section2 .section-text .text {
     width: 90%;
     font-family: 'Cantarell';
     font-size: 10px;
@@ -208,44 +204,45 @@
     margin-bottom: 15px;
     }
 
-    .main-accueil .section2 .section2-text:last-child {
+    .main-accueil .section2 .background .section2-text:last-child {
     margin-right: 0;
     }  
 
-    .main-accueil .section2 .section-text .lien {
+    .main-accueil .section2 .background .section-text .lien {
     font-family: 'Cantarell';
     font-size: 12px;
     font-weight: lighter;
     color: var(--white-color);
     }
 
-    .main-accueil .section2 .image-box .image3 {
+    .main-accueil .section2 .background .image-box .image3 {
     width: 73%
     }
 
-    .main-accueil .section2 .image-box .image4 {
+    .main-accueil .section2 .background .image-box .image4 {
     width: 54%;
     }
       
    /*Mise en page section 3*/
 
-   .section3 {
-
-    justify-content: center;
+   .main-accueil .section3 {
+     display: flex;
+     justify-content: center;
    }
+    
+   .main-accueil .section3 .left .section3-text {
+    width: 120%;
+    margin-top: 60px;
+    margin-left: 150px;
+    } 
 
-   .section3 .right {
+   .main-accueil .section3 .right {
     position: relative;
     padding-top: 180px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 60px;
    }
-
-
-   .main-accueil .section3 .left .section3-text {
-    width: 60%;
-    }
 
     .main-accueil .section3 .left h3 {
     font-family: 'beyno';
@@ -266,11 +263,10 @@
 /* Mise en page de la biographie*/
 
    .main-accueil .section3 .right .biography {
-    width: 25%;
-    text-align: justify;
+    width: 66%;
     font-size: 12px;
     background: var(--white-color);
-    padding: 60px 30px 40px 30px;
+    padding: 155px 30px 40px 30px;
     border-radius: 10px;
    }
    
@@ -278,7 +274,7 @@
     text-align: center;
     font-size: 16px;
     color: rgb(37, 36, 36);
-    padding-top: 15px;
+    padding-bottom: 15px;
    }
 
    .main-accueil .section3 .right .biography .identity {
@@ -305,13 +301,17 @@
    }
 
    .main-accueil .section3 .right .image5 {
-    width: 300px;
+    position: absolute;
+    width: 270px;
+    top: -3%;
+    left: 18%;
+    transform: translateX(-12%);
    }
 
    .main-accueil .section3 .right .image6 {
-    width: 300px;
+    height: 25%;
+    margin-top: 90px;
    }
-
 
    /*.bio-text {
     position: relative;
@@ -328,12 +328,15 @@
 /*Mise en forme formulaire*/
  
   .main-accueil .contact .my-form {
+    position: absolute;
     padding: 20px;
     max-width: 400px;
-    margin: 0 auto;
     border-radius: 25px;
     background-color: #F2CEF2;
-    position: absolute;
+    background-size: 400px;
+    background-position: center;
+    margin-left: 470px;
+    margin-top: 260px;
   }
 
   .main-accueil .contact .my-form .contact-text {
@@ -367,22 +370,16 @@
 
 
   /*Mise en page de la page wakanda*/
-   
-  /*.main-wakanda .Section1 {
-    background-image: url(./Images/Wakanda/Pantherwakanda1.png);
-  }*/
-
   .main-wakanda .section1 {
     background-image: url(./Images/Wakanda/Pantherwakanda1.png);
+    background-position-x: center;
     background-repeat: no-repeat;
-
+    position: absolute;
+    margin-top: -73px;
   }
 
-
   .main-wakanda .section1 .section1-text {
-    width: 50%;
-    margin-top: 160px;
-    padding-left: 150px;
+   margin-top: 230px;
   }
 
   .main-wakanda .section1 .section1-text h1 {
@@ -407,12 +404,7 @@
     margin-bottom: 15px;
   }
 
-  .main-wakanda .section2 {
-    background-image: url(./Images/Wakanda/Pantherwakanda2.png);
-    background-repeat: no-repeat;
-  }
-
-  .main-wakanda .section2 .left .section2-text h3, .main-wakanda .section2 .right .section2-text h3  {
+  .main-wakanda .section2 .section2-text h3 {
     font-family: 'beyno';
     font-weight: lighter;
     font-size: 15px;
@@ -420,7 +412,7 @@
     padding-bottom: 10px; 
   }
 
-  .main-wakanda .section2 .left .section2-text p, .main-wakanda .section2 .right .section2-text p {
+  .main-wakanda .section2 .section2-text p {
     width: 60%;
     font-size: 12px;
     text-align: justify;
@@ -430,17 +422,9 @@
 
    /*Mise en page de la page enigme*/
    .main-enigme .section1 {
-    display: flex;
-   }
-
-   .main-enigme .section1 .section1-image {
     
    }
 
-   .main-enigme .section1 .section1-text {
-    
-   }
-   
    .main-enigme .section1 .section1-text h1 {
     font-family: 'beyno';
     font-weight: lighter;
