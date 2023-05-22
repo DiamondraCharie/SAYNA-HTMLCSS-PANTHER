@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'Panthera'; 
+    src: url(police/PantheraRegular-MVZ9J.ttf)
+ ;
+}
+
+@font-face {
+    font-family: 'beyno';
+    src: url(police/beyno.ttf)
+}
+
+@font-face {
+    font-family: 'WakandaForever';
+    src: url(police/WakandaForever-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url(police/Cantarell-Regular.ttf);
+}
+
+:root {
+    --white-color: #FFFF;
+    --purple-color: #3D2DA6;
+    --blue-color: #07338C;
+    --navybleu-color: #021740;
+    --pink-color: #DF99F2;
+    --light-bleu-color: #9E91B7;
+    --light-lilac-color: #F2CEF2;
+    }
+
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    
+    html, body {
+    overflow-x: hidden;
+    }
+
+    body {
+        background: radial-gradient(126.67% 350.28% at -21.35% 0%,
+        #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,
+        rgba(2, 23, 64, 0) 100%);
+        font-family: 'Cantarell';
+        font-weight: 100;
+        background-color: #0B0B0B;
+        color: #FFFF;
+    }
+
+    .header {
+        width: 80%;
+        margin: 0 auto;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding-left: 60px;
+        font-family: 'beyno';
+        font-size: 15px;
+        font-weight: lighter;
+        text-decoration: none;
+        color: var(--white-color);
+    }
+    
+    .menu {
+        display: flex;
+        list-style-type: none;
+    }
+
+    /*Mise en page des réseaux sociaux*/
+    .main-accueil .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 60px;
+        top: 0;
+    }
+
+    .main-accueil .social-media:before {
+        content: "";
+        width: 2px;
+        height: 400px;
+        background: var(--light-bleu-color);
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .main-accueil .social-media:after {
+        content: "";
+        width: 2px;
+        height: 98%;
+        background: var(--light-bleu-color);
+        display: block;
+        margin-bottom: 5px;
+        position: absolute;
+        left: -19px;
+    }
+
+    .main-accueil .social-media .bouton {
+        padding-bottom: 10px;
+    }
+    /*Mise en forme de la section 1*/
+    .main-accueil .section1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-accueil .section1 .section1-text {
+        width: 50%;
+        margin-top: 160px;
+        padding-left: 150px;
+    }
+
+    .main-accueil .section1 .section1-text h1 {
+        font-family: 'Panthera';
+        font-size: 50px;
+        font-weight: 100;
+        color: var(--light-bleu-color);
+        margin-bottom: 12px;
+    }
+
+    .main-accueil .section1 .section1-text h2 {
+        font-family: 'beyno';
+        font-weight: lighter;
+        color: var(--light-bleu-color);
+        margin-bottom: 30px;
+    }
+
+    .main-accueil .section1 .section1-text .text {
+        width: 90%;
+        font-family: 'Cantarell';
+        font-size: 10px;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .main-accueil .section1 .section1-text .lien {
+        font-family: 'Cantarell';
+        font-size: 12px;
+        font-weight: lighter;
+        color: var(--white-color);
+    }
+
+    .main-accueil .section1 .section-1text .image1 {
+        width: 60%;
+        height: 70%;
+        margin-top: 80px;
+    }
+
+
+   /*Mise en page de la section 2*/
+
+   .main-accueil .section2 {
+    display: flex;
+    padding-bottom: 180px;
+   }
+   
+   .main-accueil .section2 .background {
+    display: flex;
+    background-color: var(--navybleu-color);
+    height: 205px;
+   }
+
+   .main-accueil .section2 .image-box {
+    flex: 1;
+    margin-right: 5px;
+   }
+
+   .main-accueil .section2 .image-box:last-child {
+    margin-right: 0;
+    }
+
+   .section2 .image-box .image2 {
+        width: 100%;
+    }
+
+    .main-accueil .section2 .section2-text {
+    flex: 1;
+    margin-right: 5px;
+    }
+
+    .main-accueil .section2 h3 {
+    font-family: 'beyno';
+    font-weight: lighter;
+    font-size: 15px;
+    color: var(--light-bleu-color);
+    padding-bottom: 10px;
+    }
+
+    .main-accueil .section2 .section2-text p {
+    margin: 0;
+      }
+
+    .main-accueil .section2 .section-text .text {
+    width: 90%;
+    font-family: 'Cantarell';
+    font-size: 10px;
+    text-align: justify;
+    margin-bottom: 15px;
+    }
+
+    .main-accueil .section2 .section2-text:last-child {
+    margin-right: 0;
+    }  
+
+    .main-accueil .section2 .section-text .lien {
+    font-family: 'Cantarell';
+    font-size: 12px;
+    font-weight: lighter;
+    color: var(--white-color);
+    }
+
+    .main-accueil .section2 .image-box .image3 {
+    width: 73%
+    }
+
+    .main-accueil .section2 .image-box .image4 {
+    width: 54%;
+    }
+      
+   /*Mise en page section 3*/
+
+   .section3 {
+
+    justify-content: center;
+   }
+
+   .section3 .right {
+    position: relative;
+    padding-top: 180px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+   }
+
+
+   .main-accueil .section3 .left .section3-text {
+    width: 60%;
+    }
+
+    .main-accueil .section3 .left h3 {
+    font-family: 'beyno';
+    font-weight: lighter;
+    font-size: 15px;
+    color: var(--light-bleu-color);
+    padding-bottom: 10px;   
+    }
+
+    .main-accueil .section3 .left .section3-text p {
+    width: 60%;
+    font-size: 12px;
+    text-align: justify;
+    padding-bottom: 20px;
+    font-weight: lighter;
+   }
+
+/* Mise en page de la biographie*/
+
+   .main-accueil .section3 .right .biography {
+    width: 25%;
+    text-align: justify;
+    font-size: 12px;
+    background: var(--white-color);
+    padding: 60px 30px 40px 30px;
+    border-radius: 10px;
+   }
+   
+   .main-accueil .section3 .right .biography h4 {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(37, 36, 36);
+    padding-top: 15px;
+   }
+
+   .main-accueil .section3 .right .biography .identity {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+   }
+
+   .main-accueil .section3 .right .biography .identity p {
+    background-color: #3D2DA6;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 10px;
+   }
+   
+   .main-accueil .section3 .right .biography .description p {
+    padding-bottom: 12px;
+    color: #0B0B0B;
+   }
+    
+   .main-accueil .section3 .right .biography .description span {
+    font-weight: bold;
+    color: var(--navybleu-color);
+   }
+
+   .main-accueil .section3 .right .image5 {
+    width: 300px;
+   }
+
+   .main-accueil .section3 .right .image6 {
+    width: 300px;
+   }
+
+
+   /*.bio-text {
+    position: relative;
+    z-index: 1;
+   }
+
+   #superposed-image {
+    position: absolute;
+    top: 1900px;
+    left: 50px;
+    z-index: 2;
+   }*/
+
+/*Mise en forme formulaire*/
+ 
+  .main-accueil .contact .my-form {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: #F2CEF2;
+    position: absolute;
+  }
+
+  .main-accueil .contact .my-form .contact-text {
+    color: black;
+    text-align: center;
+  }
+
+  .main-accueil .contact .my-form .my-input {
+    background-color: transparent;
+  }
+
+  .main-accueil .contact .my-form input, .main-accueil .contact .my-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+  }
+  
+  .main-accueil .contact .my-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--pink-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+
+  /*Mise en page de la page wakanda*/
+   
+  /*.main-wakanda .Section1 {
+    background-image: url(./Images/Wakanda/Pantherwakanda1.png);
+  }*/
+
+  .main-wakanda .section1 {
+    background-image: url(./Images/Wakanda/Pantherwakanda1.png);
+    background-repeat: no-repeat;
+
+  }
+
+
+  .main-wakanda .section1 .section1-text {
+    width: 50%;
+    margin-top: 160px;
+    padding-left: 150px;
+  }
+
+  .main-wakanda .section1 .section1-text h1 {
+    font-family: 'beyno';
+    font-weight: lighter;
+    color: var(--light-bleu-color);
+    margin-bottom: 10px;
+  }
+
+  .main-wakanda .section1 .section1-text h2 {
+    font-family: 'WakandaForever';
+    font-weight: lighter;
+    color: var(--light-bleu-color);
+    margin-bottom: 30px;
+  }
+
+  .main-wakanda .section1 .section1-text .text {
+    width: 90%;
+    font-family: 'Cantarell';
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .main-wakanda .section2 {
+    background-image: url(./Images/Wakanda/Pantherwakanda2.png);
+    background-repeat: no-repeat;
+  }
+
+  .main-wakanda .section2 .left .section2-text h3, .main-wakanda .section2 .right .section2-text h3  {
+    font-family: 'beyno';
+    font-weight: lighter;
+    font-size: 15px;
+    color: var(--light-bleu-color);
+    padding-bottom: 10px; 
+  }
+
+  .main-wakanda .section2 .left .section2-text p, .main-wakanda .section2 .right .section2-text p {
+    width: 60%;
+    font-size: 12px;
+    text-align: justify;
+    padding-bottom: 20px;
+    font-weight: lighter;
+   }
+
+   /*Mise en page de la page enigme*/
+   .main-enigme .section1 {
+    display: flex;
+   }
+
+   .main-enigme .section1 .section1-image {
+    
+   }
+
+   .main-enigme .section1 .section1-text {
+    
+   }
+   
+   .main-enigme .section1 .section1-text h1 {
+    font-family: 'beyno';
+    font-weight: lighter;
+    color: var(--light-bleu-color);
+    margin-bottom: 10px;
+   }
+
+   .main-enigme .section1 .section1-text p {
+    width: 90%;
+    font-family: 'Cantarell';
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 15px;
+   }
+
+   .main-enigme .section1 .section1-text1 .citation {
+    font-family: 'WakandaForever';
+    font-size: 20px;
+    color: var(--light-bleu-color);
+   }
+
+   /*Mise en page pied de page*/
+
+   footer {
+    background-image: url(./Images/All_pages/back_footer.png);
+   }
+
+   footer .box-footer  {
+    display: flex;
+    justify-content: space-between;
+    padding-right:150px;
+    padding-top: 20px;
+    align-content: center;
+   }
+
+   footer .box-footer .right .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+    padding-bottom: 71px;
+   }
+
+   footer .box-footer .footer-content .pages h2, footer .box-footer .footer-content .social-media-footer h2 {
+    font-size: 14px;
+    padding-bottom: 20px;
+   }
+
+   footer .box-footer .left {
+    padding-left: 135px;
+   }
+
+   footer .box-footer .left .image-footer1 {
+    width: 48%;
+    padding-top: 60px;
+    margin-left: 96px;
+   }
+
+   footer .box-footer .left .image-footer2  {
+    position: absolute;
+    padding-top: 152px;
+    padding-left: 129px;
+   }
+   
+   footer .box-footer .right {
+    padding-right: 5px;
+   }
+
+   footer .box-footer .right .footer-content .pages p {
+    font-size: 12px;
+    padding-right: 229px;
+   }
+
+   footer .box-footer .right .footer-content .social-media-footer .icon {
+    width: 17%;
+    padding-right: 13px;
+   }
+
+   footer .box-footer .right .text-footer {
+    display: flex;
+    font-size: 10px;
+   }
+  
+   footer .box-footer .right .text-footer  p {
+    padding-right: 12px;
+   }
+
+
+
+
+
+  
+
+

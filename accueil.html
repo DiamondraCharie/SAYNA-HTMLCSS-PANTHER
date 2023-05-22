@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil black panther</title>
-    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="Styles.css">
 </head>
    <body>
         <header>
-            <nav class="container">
+            <nav class="header">
               <a href="accueil.html">
-                <img src="/Illustrations + Logo/All pages/footer2.png" alt="Logo">
+                <img src="./Images/All_pages/footer2.png" alt="Logo">
               </a>
               <ul class="menu">
                 <li><a href="accueil.html">Accueil</a></li>
@@ -19,20 +19,20 @@
                 <li><a href="#">Enigme</a></li>
               </ul>
             </nav>
-
         </header>
-        <main>
+        
+        <main class="main-accueil">
             <!--Les réseaux sociaux-->
             <div class="social-media">
-                <img class="bouton" src="/Illustrations + Logo/All pages/icon_facebook.png" alt="">
-                <img class="bouton" src="/Illustrations + Logo/All pages/icon_instagram.png" alt="">
-                <img class="bouton" src="/Illustrations + Logo/All pages/icon_twitter.png" alt="">
-                <img class="bouton" src="/Illustrations + Logo/All pages/icon_tiktok.png" alt="">
+                <img class="bouton" src="./Images/All_pages/icon_facebook.png" alt="">
+                <img class="bouton" src="./Images/All_pages/icon_instagram.png" alt="">
+                <img class="bouton" src="./Images/All_pages/icon_twitter.png" alt="">
+                <img class="bouton" src="./Images/All_pages/icon_tiktok.png" alt="">
             </div>
+
             <!--Première section de l'accueil-->
-         
-            <div id="section1">
-                   <div class="section-text">
+            <div class="section1">
+                   <div class="section1-text">
                        <h1>BLACK PANTHER</h1>
                        <h2>WAKANDA FOREVER</h2>
                        <p class="text">En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
@@ -40,14 +40,16 @@
                         racisme, la colonisation et les violences contre les afro américains. 
                         Cefilm marque tout une génération, c’est100%africain et c’est parfait .</p>
                         <a class="lien" href="#">Voir plus></a>
-                    </div>
-                    <img class="image1" src="./Illustrations + Logo/Accueil/Pantherhome1..png" alt="">
+                   </div>
+                   <img class="image1" src="./Images/Accueil/Pantherhome1..png" alt="">
             </div>
             <!--Deuxième section de l'accueil-->
-            <div id="section2">
-                       <img src="/Illustrations + Logo/Accueil/Pantherhome2.png" alt="" width="20%" height="15%">
-                       <div class="box-section">
-                          <div class="section2-text">
+             <div class="section2">
+                     <div class="background">
+                        <div class="image-box">
+                           <img src="./Images/Accueil/Pantherhome2.png" alt="" class="image2">
+                        </div>
+                        <div class="section2-text">
                               <h3>KILLMONGER</h3>
                               <p class="text">La sauvagerie de N'Jadaka alors qu'il servait dans une
                                 unité d'opérations noires de l'armée américaine lui a
@@ -56,9 +58,11 @@
                                 détroner T’Challa dans une quête vers le pourvoir. <br>
                                 <a class="lien" href="#">Voir plus></a>
                               </p>  
-                          </div>
-                          <img src="/Illustrations + Logo/Accueil/Pantherhome3.png" alt="" width="20%" height="80%">
-                          <div class="section2-text">
+                        </div>
+                        <div class="image-box">
+                             <img src="./Images/Accueil/Pantherhome3.png" alt="" class="image3">
+                        </div>
+                        <div class="section2-text">
                               <h3>OKOYE</h3>
                               <p class="text">Okoye est le général des Dora Milaje (groupe d’élite
                                 de femmes guerrières) et le chef des forces armées et
@@ -67,12 +71,17 @@
                                 nombreuses aventures. <br>
                                 <a class="lien" href="#">Voir plus></a>
                              </p>
-                          </div>
-                          <img src="/Illustrations + Logo/Accueil/Pantherhome4.png" alt="" width="15%" height="80%">
-                     </div> 
-               </div> 
-               <!--Troisième section de l'accueil-->
-                 <div id="section3">
+                        </div>
+                        <div class="image-box">
+                             <img src="./Images/Accueil/Pantherhome4.png" alt="" class="image4">
+                        </div>
+                   </div>
+             </div> 
+           
+             <!--Troisième section de l'accueil-->
+      
+             <div class="section3">
+               <div class="left"><!--Partie gauche de la page-->
                     <div class="section3-text">
                         <h3>Naissance d’un prince</h3>
                         <p>T'Challa est né au Wakanda, un pays isolationniste situé en Afrique, du monarque régnant T'Chaka et de sa femme
@@ -97,11 +106,7 @@
                           T'Challa et Zuri
                        </p>
                     </div>
-                 </div>
-                 
-               <!--Quatrième section de l'accueil-->
-               <div id="section4">
-                    <div class="section4-text">
+                    <div class="section3-text">
                         <h3>un heros vengeur</h3>
                         <p>« La mort, dans notre culture, n'est pas la fin. Pour nous, c'est plutôt un point de départ. Le défunt n'a qu'à tendre les
                            bras; et Bast et Sekhmet le guident jusqu'à l'entrée de la grande vallée où il résidera à tout jamais.
@@ -121,16 +126,37 @@
                            consumer à nouveau.
                         </p>
                         <p>« Quelle est la meilleure façon de protéger le Wakanda ? Je dois devenir un grand roi baba, comme tu l'étais.
-                           Tu devras lutter. Pour ça, il te faudra t'entourer de personnes de confiance. Tu es un homme bon, avec un grand
-                           coeur. C'est difficile pour un homme bon d'être roi. »
-                           T'Challa et T'Chaka
+                        Tu devras lutter. Pour ça, il te faudra t'entourer de personnes de confiance. Tu es un homme bon, avec un grand
+                        coeur. C'est difficile pour un homme bon d'être roi. »
+                        T'Challa et T'Chaka
                         </p>
                     </div>
+                    <div class="section3-text">
+                        <h3>un heros PROTECTEUR ET JUSTICIER</h3>
+                        <p>« Tu as eu tort ! Vous avez tous eu tort ! Il ne fallait pas tourner le dos au reste du monde. Nous avons laissé la peur
+                           d’être découverts nous empêcher de faire ce qui était juste. Non père, non je ne peux pas rester ici avec toi. Tant qu’il
+                           sera sur le trône, je ne saurai trouver le repos. C’est un monstre et c’est nous qui l’avons créé. Il faut que je reprenne
+                           le pouvoir, il le faut ! Il faut que je corrige ces injustices. »
+                           T'Challa à T'Chaka
+                       </p>
+                       <p>Il y a des siècles, alors que cinq tribus africaines se disputaient une météorite composée de vibranium métallique
+                          extraterrestre, un chaman guerrier Bashenga, guidé par la déesse panthère Bast, ingère une herbe en forme de cœur
+                          affectée par le métal et acquiert des capacités surhumaines. Devenu le premier Black Panther , il unit toutes les tribus sauf
+                          la tribu des Jabari, et forme la nation du Wakanda. Au fil du temps, les Wakandains utilisent le vibranium pour développer
+                          une technologie de pointe tout en s'isolant du reste du monde et en sefaisant passer pour un pays du tiers monde. 
+                       </p>
+                       <p>Après les événements qui se sont déroulés dans Captain America : Civil War , T'Challa revient chezlui prendre sa place sur
+                          le trône du Wakanda, une nation africaine technologiquement très avancée. Néanmoins, T’Challa se retrouve rapidement
+                          mis au défi pour obtenir le trône. Une fois couronné il espère accomplir une tâche que son père n’aura pas pu mener à son
+                          terme : capturerUlysseKlawun voleur qui a volé du vibranium. Cette traque l’amènera àfaire équipe avec l’agent de la CIA
+                          Everett Ross et les membres de la Dora Milaje, les forces spéciales du Wakanda. Il découvira également un secret enfoui
+                          sur sa famille qui lui fera prendre conscience de la nécessité de s’ouvrir au monde exterieur afin de ne pas répeter les
+                          erreurs de son père. 
+                       </p>
+                    </div>
                </div>
-
-               <!--Section biography-->
-               <div id="biography">
-                  <div class="bio-text">
+               <div class="right"><!--Partie droite de la page-->
+                  <div class="biography">
                      <h4>T’Challa</h4>
                      <div class="identity">
                         <p>Black Panther</p>
@@ -148,72 +174,61 @@
                         <p>Réalité : <span>Terre-199999</span></p>
                      </div>
                   </div>
+                  <img src="./Images/Accueil/Pantherhome5.png" alt="" class="image5">
+                  <img src="./Images/Accueil/Pantherhome6.png" alt="" class="image6">
                </div>
-               <img src="/Illustrations + Logo/Accueil/Pantherhome5.png" alt="" id="superposed-image" width="25%" height="30%">
-               <!--Cinquième section de l'accueil-->
-               <div id="section5">
-                    <div class="section5-text">
-                        <h3>un heros PROTECTEUR ET JUSTICIER</h3>
-                        <p>« Tu as eu tort ! Vous avez tous eu tort ! Il ne fallait pas tourner le dos au reste du monde. Nous avons laissé la peur
-                           d’être découverts nous empêcher de faire ce qui était juste. Non père, non je ne peux pas rester ici avec toi. Tant qu’il
-                           sera sur le trône, je ne saurai trouver le repos. C’est un monstre et c’est nous qui l’avons créé. Il faut que je reprenne
-                           le pouvoir, il le faut ! Il faut que je corrige ces injustices. »
-                           T'Challa à T'Chaka
-                        </p>
-                        <p>Il y a des siècles, alors que cinq tribus africaines se disputaient une météorite composée de vibranium métallique
-                           extraterrestre, un chaman guerrier Bashenga, guidé par la déesse panthère Bast, ingère une herbe en forme de cœur
-                           affectée par le métal et acquiert des capacités surhumaines. Devenu le premier Black Panther , il unit toutes les tribus sauf
-                           la tribu des Jabari, et forme la nation du Wakanda. Au fil du temps, les Wakandains utilisent le vibranium pour développer
-                           une technologie de pointe tout en s'isolant du reste du monde et en sefaisant passer pour un pays du tiers monde. 
-                        </p>
-                        <p>
-                          Après les événements qui se sont déroulés dans Captain America : Civil War , T'Challa revient chezlui prendre sa place sur
-                          le trône du Wakanda, une nation africaine technologiquement très avancée. Néanmoins, T’Challa se retrouve rapidement
-                          mis au défi pour obtenir le trône. Une fois couronné il espère accomplir une tâche que son père n’aura pas pu mener à son
-                          terme : capturerUlysseKlawun voleur qui a volé du vibranium. Cette traque l’amènera àfaire équipe avec l’agent de la CIA
-                          Everett Ross et les membres de la Dora Milaje, les forces spéciales du Wakanda. Il découvira également un secret enfoui
-                          sur sa famille qui lui fera prendre conscience de la nécessité de s’ouvrir au monde exterieur afin de ne pas répeter les
-                          erreurs de son père.
-                       </p>
+
+               <!--Section contact-->
+                 
+                 <div class="contact">
+                  <form class="my-form">
+                     <div class="contact-text">
+                        <p>Besoin de l’intervention du Wakanda ?</p>
+                        <h2>Contactez-nous !</h2>
+                     </div>
+                     <div class="my-input">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Nom" required><br>
+                        <label for="email"></label>
+                        <input type="email" placeholder="Email" required><br>
+                        <label for="message"></label>
+                        <textarea  placeholder="Message" required></textarea>
+                        <button type="submit">Envoyer</button>
                     </div>
-                    <img src="/Illustrations + Logo/Accueil/Pantherhome6.png" alt="" width="30%" height="30%">
-                 </div>
-         
-                 <div id="contact">
-                    <div class="form">
-                       <p>Besoin de l’intervention du Wakanda ?</p>
-                       <h2>Contactez nous !</h2>
-                       <form action="form" method="post">
-                          <label for="name" ></label>
-                          <input type="name" id="name" name="name" placeholder="Nom"><br>
-                          <label for="email"></label>
-                          <input type="email" id="email" name="email" placeholder="Email"><br>
-                          <label for="text"></label>
-                          <input type="text" id="text" name="text" placeholder="Message"><br>
-                          <input type="submit" value="Envoyer">
-                       </form>
-                       <img src="/Illustrations + Logo/Accueil/Pantherhome7.png" alt="">
+                    
+                  </form>
+                </div>
+                <img src="./Images/Accueil/Pantherhome7.png" alt="">
+
+
+            <footer>
+               <div class="box-footer">
+                  <div class="left">
+                    <img class="image-footer2" src="./Images/All_pages/footer2.png" alt="">
+                    <img class="image-footer1" src="./Images/All_pages/footer1.png" alt="">
+                  </div>
+                  <div class="right">
+                     <div class="footer-content">
+                         <div class="pages">
+                            <h2>P A G E S</h2>
+                            <p>à propos <br>
+                               Wakanda</p>
+                         </div>
+                         <div class="social-media-footer">
+                            <h2>R E T R O U V E Z N O U S</h2>
+                            <a href="#"><img class="icon" src="./Images/All_pages/footer3.png" alt=""></a>
+                            <a href="#"><img class="icon" src="./Images/All_pages/footer4.png" alt=""></a>
+                            <a href="#"><img class="icon" src="./Images/All_pages/footer5.png" alt=""></a>
+                            <a href="#"><img class="icon" src="./Images/All_pages/footer6.png" alt=""></a>
+                          </div>
+                     </div>
+                     <div class="text-footer">
+                       <p>2022 Tous droits réservés</p>
+                       <p>Politique de confidentialité</p>
+                       <p>Conditions d’utilisation</p>
                      </div>
                   </div>
-                    
-   
-            <footer>
-                <div class="container">
-                    <img src="/Illustrations + Logo/All pages/footer1.png" alt="">
-                    <img src="/Illustrations + Logo/All pages/footer2.png" alt="">
-                    <div>
-                        <h2>P A G E S</h2>
-                        <p>à propos
-                            Wakanda</p>
-                    </div>
-                    <div class="social-footer">
-                        <h2>R E T R O U V E Z N O U S</h2>
-                        <a href="#"><img src="/Illustrations + Logo/All pages/footer3.png" alt=""></a>
-                        <a href="#"><img src="/Illustrations + Logo/All pages/footer4.png" alt=""></a>
-                        <a href="#"><img src="/Illustrations + Logo/All pages/footer5.png" alt=""></a>
-                        <a href="#"><img src="/Illustrations + Logo/All pages/footer6.png" alt=""></a>
-                    </div>
-                </div>
+               </div>
 
             </footer>
         </main>

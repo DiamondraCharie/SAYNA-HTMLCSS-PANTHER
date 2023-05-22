@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>enigme black panther</title>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Enigme black panther</title>
 </head>
 <body>
     <header>
-        <nav class="container">
-            <a href="wakanda.html">
-              <img src="/Illustrations + Logo/All pages/footer2.png" alt="Logo">
-            </a>
-            <ul>
-              <li><a href="wakanda.html">Accueil</a></li>
-              <li><a href="#">Wakanda</a></li>
-              <li><a href="#">Enigeme</a></li>
-            </ul>
-          </nav>
+        <nav class="header">
+          <a href="accueil.html">
+            <img src="./Images/All_pages/footer2.png" alt="Logo">
+          </a>
+          <ul class="menu">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="#">Wakanda</a></li>
+            <li><a href="#">Enigme</a></li>
+          </ul>
+        </nav>
     </header>
-    <main>
-        <div class="container">
-             <img src="/Illustrations + Logo/Enigme/Pantherenigme1.png" alt="">
-             <div>
+    
+    <main class="main-enigme">
+        <div class="section1">
+            <div class="section1-image">
+                <img src="./Images/Enigme/Pantherenigme1.png" alt="">
+            </div>
+            <div class="section1-text">
                  <h1>RELEVE LE DEFI DES DORA MILAJE</h1>
                  <P>
                     Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde
@@ -32,57 +36,73 @@
                     Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
                     et apprend par la même occasion la première valeur d’une Dora Milaje !
                  </P>
-             </div>
-             <div>
-                <p>“ SI JE SUIS  FIDELE C’EST A CE TRONE 
+                 <img src="./Images/Enigme/Pantherenigme2.png" alt="">
+                 <img src="./Images/Enigme/Pantherenigme3.png" alt="">
+            </div>
+        <div class="section2">
+             <div class="section2-text">
+                <p class="citation">“ SI JE SUIS  FIDELE C’EST A CE TRONE 
                     PEU IMPORTE QUI MONTE DESSUS ”</p>
-             </div>
-             <div>
+             
                 <h2>Voici la transicription de l’alphabet :</h2>
-                <p>
+                <p class="alphabet">
                     A = A ; B = b ; c = c ; d = d ; e = e ; f = f ; g = g ; h = h ; i = i ; j = j ; 
 
                     k = k ; l = l ; m = m ; n = n ; o = o ; p = p ; q = q ; r = r ; s = s ; t = t ;
 
                     u = u ; w = w ; x = x ; y = y ; z = z
                 </p>
-             </div>
-             <div>
+             
+                <div class="coms">
                 <h2>Le savais tu ?</h2>
                 <p>
                     Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est
                     la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une
                     phrase. Et si tu regardais quel symbole revient le plus souvent ?
                 </p>
+                <img src="./Images/Enigme/Pantherenigme2.png" alt="">
+                </div>
+                <div class="form">
+                   <h2>Alors, as tu la réponse ?</h2>
+                   <form action="form" method="post">
+                       <input type="text" id="text" name="text" placeholder="Réponse">
+                       <input type="submit" value="Envoyer">
+                   </form>
+                </div>
              </div>
-             <div>
-                <h2>Alors, as tu la réponse ?</h2>
-                <form action="form" method="post">
-                 <input type="text" id="text" name="text" placeholder="Réponse">
-                 <input type="submit" value="Envoyer">
-                </form>
-             </div>
+          </div> 
         </div> 
+
         <footer>
-            <div class="container">
-                <img src="/Illustrations + Logo/All pages/footer1.png alt="">
-                <img src="/Illustrations + Logo/All pages/footer2.png alt="">
-                <div>
-                    <h2>P A G E S</h2>
-                    <p>à propos
-                        Wakanda</p>
-                </div>
-                <div class="social-footer">
-                    <h2>R E T R O U V E Z N O U S</h2>
-                    <a href="#"><img src="/Illustrations + Logo/All pages/footer3.png alt=""></a>
-                    <a href="#"><img src="/Illustrations + Logo/All pages/footer4.png alt=""></a>
-                    <a href="#"><img src="/Illustrations + Logo/All pages/footer5.png alt=""></a>
-                    <a href="#"><img src="/Illustrations + Logo/All pages/footer6.png alt=""></a>
-                </div>
+            <div class="box-footer">
+               <div class="left">
+                 <img class="image-footer2" src="./Images/All_pages/footer2.png" alt="">
+                 <img class="image-footer1" src="./Images/All_pages/footer1.png" alt="">
+               </div>
+               <div class="right">
+                  <div class="footer-content">
+                      <div class="pages">
+                         <h2>P A G E S</h2>
+                         <p>à propos <br>
+                            Wakanda</p>
+                      </div>
+                      <div class="social-media-footer">
+                         <h2>R E T R O U V E Z N O U S</h2>
+                         <a href="#"><img class="icon" src="./Images/All_pages/footer3.png" alt=""></a>
+                         <a href="#"><img class="icon" src="./Images/All_pages/footer4.png" alt=""></a>
+                         <a href="#"><img class="icon" src="./Images/All_pages/footer5.png" alt=""></a>
+                         <a href="#"><img class="icon" src="./Images/All_pages/footer6.png" alt=""></a>
+                       </div>
+                  </div>
+                  <div class="text-footer">
+                    <p>2022 Tous droits réservés</p>
+                    <p>Politique de confidentialité</p>
+                    <p>Conditions d’utilisation</p>
+                  </div>
+               </div>
             </div>
 
-        </footer>
-
+         </footer>
     </main>
 </body>
 </html>
