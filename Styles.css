@@ -373,13 +373,15 @@
   .main-wakanda .section1 {
     background-image: url(./Images/Wakanda/Pantherwakanda1.png);
     background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
-    position: absolute;
     margin-top: -73px;
   }
 
   .main-wakanda .section1 .section1-text {
-   margin-top: 230px;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 150px;
   }
 
   .main-wakanda .section1 .section1-text h1 {
@@ -397,11 +399,25 @@
   }
 
   .main-wakanda .section1 .section1-text .text {
-    width: 90%;
+    width: 230px;
     font-family: 'Cantarell';
     font-size: 12px;
     text-align: justify;
     margin-bottom: 15px;
+  } 
+
+  .main-wakanda .section2 {
+    
+  }
+
+  .main-wakanda .section2 .section2-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1074px;
+  }
+ 
+  .main-wakanda .section2 .section2-text .left {
+
   }
 
   .main-wakanda .section2 .section2-text h3 {
@@ -413,7 +429,7 @@
   }
 
   .main-wakanda .section2 .section2-text p {
-    width: 60%;
+    width: 432px;
     font-size: 12px;
     text-align: justify;
     padding-bottom: 20px;
@@ -422,30 +438,57 @@
 
    /*Mise en page de la page enigme*/
    .main-enigme .section1 {
-    
+    display: flex;
    }
 
+   .main-enigme .section1 .section1-image {
+    height: 920px;
+    width: 920px;
+    image-rendering: auto;
+    object-fit: cover;
+    margin-top: -260px;
+   }
+
+   .main-enigme .section1 .section1-text {
+    width: 397px;
+    margin-left: -135px;
+   }
+   
    .main-enigme .section1 .section1-text h1 {
+    font-size: 45px;
     font-family: 'beyno';
     font-weight: lighter;
     color: var(--light-bleu-color);
+    margin-top: 165px;
     margin-bottom: 10px;
    }
 
    .main-enigme .section1 .section1-text p {
-    width: 90%;
+    position: absolute;
+    width: 330px;
     font-family: 'Cantarell';
-    font-size: 12px;
+    font-size: 10px;
     text-align: justify;
+    margin-top: 300px;
     margin-bottom: 15px;
+    margin-left: 87px;
    }
 
-   .main-enigme .section1 .section1-text1 .citation {
+   .main-enigme .section1 .section1-text .image2-enigme {
+    width: 492px;
+    margin-top: 200px;
+   }
+
+   .main-enigme .section1 .section1-text .image3-enigme {
+    width: 492px;
+   }
+
+   .main-enigme .section2 .section2-text .citation {
     font-family: 'WakandaForever';
     font-size: 20px;
     color: var(--light-bleu-color);
    }
-
+   
    /*Mise en page pied de page*/
 
    footer {
