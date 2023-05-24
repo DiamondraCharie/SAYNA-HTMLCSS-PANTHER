@@ -370,71 +370,104 @@
 
 
   /*Mise en page de la page wakanda*/
+
   .main-wakanda .section1 {
     background-image: url(./Images/Wakanda/Pantherwakanda1.png);
     background-position-x: center;
-    background-position-y: center;
     background-repeat: no-repeat;
-    margin-top: -73px;
+    margin-top: -50px;
   }
 
   .main-wakanda .section1 .section1-text {
-    position: absolute;
-    margin-top: -280px;
-    margin-left: 150px;
+    padding-top: 430px;
+    padding-left: 210px;
   }
 
   .main-wakanda .section1 .section1-text h1 {
     font-family: 'beyno';
     font-weight: lighter;
+    font-size: 42px;
     color: var(--light-bleu-color);
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
-
+  
   .main-wakanda .section1 .section1-text h2 {
     font-family: 'WakandaForever';
     font-weight: lighter;
     color: var(--light-bleu-color);
-    margin-bottom: 30px;
+    word-spacing: 8px;
   }
-
-  .main-wakanda .section1 .section1-text .text {
-    width: 230px;
+   
+  .main-wakanda .section1 .section1-text p {
     font-family: 'Cantarell';
-    font-size: 12px;
+    font-size: 10px;
     text-align: justify;
-    margin-bottom: 15px;
-  } 
+    width: 349px;
+    padding-top: 35px;
+  }
 
   .main-wakanda .section2 {
-    
-  }
-
-  .main-wakanda .section2 .section2-text {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1074px;
+    margin-top: 370px;
   }
  
-  .main-wakanda .section2 .section2-text .left {
-
+  .main-wakanda .section2 .background {
+   background-image: url(Images/Wakanda/Pantherwakanda2.png);
+   background-size: cover;
   }
 
-  .main-wakanda .section2 .section2-text h3 {
+  .main-wakanda .section2 .top {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+    padding-top: 158px;
+  }
+
+  .main-wakanda .section2 .top .left, .main-wakanda .section2 .top .right {
+    width: 475px;
+   }
+ 
+  .main-wakanda .section2 .top .section2-text h3, .main-wakanda .section2 .bottom .section2-text h3 {
     font-family: 'beyno';
     font-weight: lighter;
     font-size: 15px;
     color: var(--light-bleu-color);
-    padding-bottom: 10px; 
+    padding-bottom: 15px;
   }
 
-  .main-wakanda .section2 .section2-text p {
-    width: 432px;
+  .main-wakanda .section2 .top .section2-text p, .main-wakanda .section2 .bottom .section2-text p {
+    font-family: 'Cantarell';
     font-size: 12px;
     text-align: justify;
-    padding-bottom: 20px;
-    font-weight: lighter;
+    padding-bottom: 15px;
+  }
+
+  .main-wakanda .section2 .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+
+  .main-wakanda .section2 .bottom .left, .main-wakanda .section2 .bottom .right {
+    width: 475px;
    }
+ 
+
+  .main-wakanda .section2 .left iframe {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  
+  .main-wakanda .section2 .right .image2 {
+    width: 420px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
    /*Mise en page de la page enigme*/
    .main-enigme .section1 {
