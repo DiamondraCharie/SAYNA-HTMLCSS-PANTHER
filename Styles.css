@@ -21,15 +21,15 @@
 
 :root {
     --white-color: #FFFF;
-    --purple-color: #3D2DA6;
-    --blue-color: #07338C;
-    --navybleu-color: #021740;
-    --pink-color: #DF99F2;
-    --light-bleu-color: #9E91B7;
-    --light-lilac-color: #F2CEF2;
-    --translucent-white: rgba(255, 255, 255, 0.5);
+    --purple-color: hsl(248 57% 41%);
+    --blue-color: hsl(220 90% 29%);
+    --navybleu-color: hsl(220 94% 13%);
+    --pink-color: hsl(287 77% 77%);
+    --light-bleu-color: hsl(261 21% 64%);
+    --light-lilac-color: hsl(300 58% 88%);
+    --translucent-hsl:(0 0% 100%): hsl(0 0% 100% / .5);
     }
-
+    
      * {
         margin: 0;
         padding: 0;
@@ -42,11 +42,11 @@
 
     body {
         background: radial-gradient(126.67% 350.28% at -21.35% 0%,
-        #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,
-        rgba(2, 23, 64, 0) 100%);
+        hsl(219 58% 16%) 0%, hsl(0 0% 4%) 39.1%, hsl(220 94% 13% / .837641) 94.57%,
+        hsl(220 94% 13% / .0) 100%);
         font-family: 'Cantarell';
         font-weight: 100;
-        background-color: #0B0B0B;
+        background-color: hsl(0 0% 4%);
         color: #FFFF;
     }
 
@@ -54,6 +54,7 @@
         width: 80%;
         margin: 0 auto;
     }
+
     nav {
         display: flex;
         align-items: center;
@@ -70,10 +71,22 @@
         color: var(--white-color);
     }
     
-    .menu {
+    .header .menu {
         display: flex;
         list-style-type: none;
     }
+    /*Animation menu header*/
+
+    .header .menu a:hover {
+      text-decoration: underline;
+      color: #FFFF;
+    }
+
+    .header .menu a:focus {
+      text-decoration: underline;
+      color: hsl(300 76% 72%);
+    }
+
 
     /*Mise en page des réseaux sociaux*/
     .main-accueil .social-media {
@@ -154,7 +167,7 @@
         width: 900px;
         margin-top: 80px;
     }
-
+   
 
    /*Mise en page de la section 2*/
     .main-accueil .section2 .grid {
@@ -262,7 +275,7 @@
    .main-accueil .section3 .right .biography h4 {
     text-align: center;
     font-size: 16px;
-    color: rgb(37, 36, 36);
+    color: hsl(0 1% 14%);
     padding-bottom: 15px;
    }
 
@@ -274,7 +287,7 @@
    }
 
    .main-accueil .section3 .right .biography .identity p {
-    background-color: #3D2DA6;
+    background-color: hsl(248 57% 41%);
     border-radius: 5px;
     padding: 5px 14px;
     font-size: 10px;
@@ -282,7 +295,7 @@
    
    .main-accueil .section3 .right .biography .description p {
     padding-bottom: 12px;
-    color: #0B0B0B;
+    color: hsl(0 0% 4%);
    }
     
    .main-accueil .section3 .right .biography .description span {
@@ -310,13 +323,13 @@
     position: absolute;
     left: 360px;
     margin-top: 250px;
-    background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(to bottom, white, hsl(0 0% 100% / .5));
     padding: 45px 120px;
     border-radius: 90px;
   }
 
   .main-accueil .section4 .my-form .section4-text {
-    color: black;
+    color: hsl(0 0% 0%);
     text-align: center;
   }
 
@@ -349,14 +362,17 @@
     padding: 10px 35px;
     margin-left: 130px;
     background-color: var(--translucent-white);
-    color: black;
+    color: hsl(0 0% 0%);
     border: none;
     cursor: pointer;
     border-radius: 15px;
     font-size: 10px;
     text-align: center;
   }
-
+  /*Animation bouton des formulaires*/
+  .main-accueil .section4 .my-form button:hover {
+    box-shadow: 0 0 5px white;
+  }
 
   /*Mise en page de la page wakanda*/
   /*Première section*/
@@ -544,6 +560,14 @@
     width: 370px;
    }
 
+   .main-enigme .section2 .left .declaration span[data-letter="A"] {
+    font-family: 'WakandaForeverA';
+   }
+
+   .main-enigme .section2 .left .declaration span::after {
+    content: ";";
+  }
+
    .main-enigme .section2 .my-form {
     display: block;
     padding-top: 90px;
@@ -569,6 +593,11 @@
     background-color: var(--light-lilac-color);
     margin-left: 90px;
     border-color: var(--light-lilac-color);
+   }
+
+   /*Animation bouton du formulaire enigme*/
+   .main-enigme .section2 .my-form input[type='submit']:hover {
+    box-shadow: 0 0 5px var(--light-lilac-color);
    }
 
    .main-enigme .section2 .right .para {
@@ -626,12 +655,14 @@
     width: 48%;
     padding-top: 60px;
     margin-left: 96px;
+    transition: transform 0.3s ease-in-out;
    }
 
    footer .box-footer .left .image-footer2  {
     position: absolute;
     padding-top: 152px;
     padding-left: 129px;
+    transition: transform 0.3s ease-in-out;
    }
    
    footer .box-footer .right {
@@ -646,6 +677,7 @@
    footer .box-footer .right .footer-content .social-media-footer .icon {
     width: 17%;
     padding-right: 13px;
+    transition: transform 0.3s ease-in-out;
    }
 
    footer .box-footer .right .text-footer {
@@ -657,7 +689,17 @@
     padding-right: 12px;
    }
 
+  /*Animation textes "A propos" et "wakanda"*/
+   
+  footer .box-footer .footer-content .pages p a {
+    color: #FFFF;
+    text-decoration: none;
+   }
 
+   footer .box-footer .footer-content .pages p a:hover {
+    text-decoration: underline;
+    color: #FFFF;
+   }
 
 
 
