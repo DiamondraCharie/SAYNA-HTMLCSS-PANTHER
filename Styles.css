@@ -343,7 +343,7 @@
   }
 
   .main-accueil .section4 .my-form input {
-    padding: 10px 200px 10px 18px;
+    padding: 10px 240px 10px 18px;
     margin-bottom: 10px;
     border-radius: 20px;
     background-color: transparent;
@@ -361,7 +361,7 @@
     display: block;
     padding: 10px 35px;
     margin-left: 130px;
-    background-color: var(--translucent-white);
+    background-color: var(--white-color);
     color: hsl(0 0% 0%);
     border: none;
     cursor: pointer;
@@ -560,13 +560,11 @@
     width: 370px;
    }
 
-   .main-enigme .section2 .left .declaration span[data-letter="A"] {
-    font-family: 'WakandaForeverA';
+   .main-enigme .section2 .left p span {
+    font-family: 'WakandaForever';
+    font-size: 12px;
+    word-spacing: 5px;
    }
-
-   .main-enigme .section2 .left .declaration span::after {
-    content: ";";
-  }
 
    .main-enigme .section2 .my-form {
     display: block;
@@ -655,14 +653,12 @@
     width: 48%;
     padding-top: 60px;
     margin-left: 96px;
-    transition: transform 0.3s ease-in-out;
    }
 
    footer .box-footer .left .image-footer2  {
     position: absolute;
     padding-top: 152px;
     padding-left: 129px;
-    transition: transform 0.3s ease-in-out;
    }
    
    footer .box-footer .right {
@@ -677,7 +673,6 @@
    footer .box-footer .right .footer-content .social-media-footer .icon {
     width: 17%;
     padding-right: 13px;
-    transition: transform 0.3s ease-in-out;
    }
 
    footer .box-footer .right .text-footer {
