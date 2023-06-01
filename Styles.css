@@ -77,6 +77,9 @@
     }
     /*Animation menu header*/
 
+    .header .logo:hover {
+      filter: invert(10%) sepia(75%) saturate(7463%) hue-rotate(256deg) brightness(98%) contrast(92%);
+    }
     .header .menu a:hover {
       text-decoration: underline;
       color: #FFFF;
@@ -96,6 +99,10 @@
         position: absolute;
         left: 60px;
         top: 0;
+    }
+
+    .main-accueil .social-media a:hover {
+      filter: invert(10%) sepia(100%) saturate(2%) hue-rotate(311deg) brightness(106%) contrast(100%);
     }
 
     .main-accueil .social-media:before {
@@ -127,6 +134,18 @@
         display: flex;
         justify-content: space-around;
         padding-left: 150px;
+        animation: fade-in 2s ease-in-out forwards;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
     }
 
     .main-accueil .section1 .left {
@@ -175,7 +194,20 @@
       grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
       gap: 14px;
       margin-left: 100px;
+      animation: fade-in 2s ease-in-out forwards;
     }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
 
     .main-accueil .section2 .background .grid {
       background-color: var(--navybleu-color);
@@ -187,6 +219,10 @@
       width: 260px;
     height: 290px;
     margin-top: -40px;
+    }
+
+    .main-accueil .section2 .grid .image2 img:hover {
+      transform: scale(1.2);
     }
 
     .main-accueil .section2 .grid .section2-text {
@@ -220,6 +256,10 @@
       width: 200px;
       height: 210px;
     }
+
+    .main-accueil .section2 .grid .image3 img:hover {
+      transform: scale(1.2);
+    }
   
     .main-accueil .section2 .grid .image4 img {
       width: 165px;
@@ -227,13 +267,28 @@
       padding-right: 0;
     }
       
+    .main-accueil .section2 .grid .image4 img:hover {
+      transform: scale(1.2);
+    }
    /*Mise en page section 3*/
 
    .main-accueil .section3 {
      display: flex;
      justify-content: space-around;
+     animation: fade-in 2s ease-in-out forwards;
    }
-    
+
+   @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
    .main-accueil .section3 .left .section3-text { /*Mise en forme partie gauche de la section3*/
     width: 800px;
     margin-top: 145px;
@@ -307,8 +362,11 @@
     position: absolute;
     width: 270px;
     top: 7%;
-    left: 20%;
-    transform: translateX(-12%);
+    left: 13%;
+   }
+
+   .main-accueil .section3 .right .image5:hover {
+    transform: scale(1.2);
    }
 
    .main-accueil .section3 .right .image6 {
@@ -316,6 +374,10 @@
     height: 280px;
     margin-top: 100px;
    }
+
+   .main-accueil .section3 .right .image6:hover {
+    transform: scale(1.2);
+   } 
 
 /*Mise en forme formulaire*/
 
@@ -326,7 +388,19 @@
     background-image: linear-gradient(to bottom, white, hsl(0 0% 100% / .5));
     padding: 45px 120px;
     border-radius: 90px;
+    animation: fade-in 2s ease-in-out forwards;
   }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
 
   .main-accueil .section4 .my-form .section4-text {
     color: hsl(0 0% 0%);
@@ -386,7 +460,20 @@
   .main-wakanda .section1 .section1-text {
     padding-top: 430px;
     padding-left: 210px;
+    animation: fade-in 2s ease-in-out forwards;
   }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+
 
   .main-wakanda .section1 .section1-text h1 {
     font-family: 'beyno';
@@ -415,8 +502,20 @@
   /*Mise en forme de la partie haut de la section 2*/
   .main-wakanda .section2 {
     margin-top: 410px;
+    animation: fade-in 2s ease-in-out forwards;
   }
  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+
   .main-wakanda .section2 .background {
    background-image: url(Images/Wakanda/Pantherwakanda2.png);
    background-size: cover;
@@ -429,6 +528,8 @@
     margin-right: 145px;
     padding-top: 158px;
   }
+
+
    
   /*Mise en forme général de la partie haut et bas de la section 2 */
 
@@ -478,6 +579,10 @@
     padding-bottom: 30px;
   }
 
+  .main-wakanda .section2 .right .image2:hover {
+    transform: scale(1.2);
+  }
+
    /*Mise en page de la page enigme*/
    /*Mise en forme de la section 1 enigme*/
    .main-enigme .section1 {
@@ -486,7 +591,20 @@
     margin-top: -180px;
     height: 920px;
     width: 920px;
+    animation: fade-in 2s ease-in-out forwards;
    }
+
+   @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+
 
    .main-enigme .section1 .section1-text {
     width: 397px;
@@ -503,6 +621,10 @@
     margin-bottom: 45px;
    }
 
+   .main-enigme .section1 .section1-text h1:hover {
+    transform: scale(1.2);
+   }
+
    .main-enigme .section1 .section1-text p {
     position: absolute;
     width: 332px;
@@ -511,6 +633,10 @@
     text-align: justify;
     margin-top: 105px;
     margin-left: 87px;
+   }
+
+   .main-enigme .section1 .section1-text p:hover {
+    transform: scale(1.2);
    }
 
    .main-enigme .section1 .section1-image {
@@ -537,6 +663,22 @@
     padding-right: 150px;
    }
 
+   .main-enigme .section2 .left {
+    animation: fade-in 2s ease-in-out forwards;
+   }
+
+   @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+
+
    .main-enigme .section2 .left h2 {
     width: 503px;
     font-family: 'WakandaForever';
@@ -559,6 +701,11 @@
     font-size: 12px;
     width: 370px;
    }
+
+   .main-enigme .section2 .left p:hover {
+    transform: scale(1.2);
+   }
+   
 
    .main-enigme .section2 .left p span {
     font-family: 'WakandaForever';
@@ -602,6 +749,10 @@
    position: absolute;
    bottom: -390px;
    left: 740px;
+   }
+
+   .main-enigme .section2 .right .para:hover {
+    transform: scale(1.2);
    }
 
    .main-enigme .section2 .right h3 {
